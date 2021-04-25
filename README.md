@@ -15,7 +15,7 @@ $ composer require chipslays/sauce
 A simple implementation of a Singleton as a trait.
 
 ```php
-use Sause\Traits\Singleton;
+use Sauce\Traits\Singleton;
 
 class Hero
 {
@@ -31,7 +31,7 @@ $hero2->attack();
 ```
 
 ```php
-use Sause\Traits\Singleton;
+use Sauce\Traits\Singleton;
 
 class SingletonClass {
     use Singleton;
@@ -69,7 +69,7 @@ echo SingletonClass::getInstance()->set(3)->get(); // return 3
 When applied to a class, makes it possible to add methods to that class at runtime.
 
 ```php
-use Sause\Traits\MappableClass;
+use Sauce\Traits\MappableClass;
 
 class MappableClass {
     use Mappable;
@@ -85,7 +85,7 @@ echo $class->timestamp(); // e.g. 1234567890
 ```
 
 ```php
-use Sause\Traits\MappableClass;
+use Sauce\Traits\MappableClass;
 
 class MappableClass {
     use Mappable;
@@ -103,7 +103,7 @@ echo MappableClass::timestamp()
 Call function or static/non-static classes.
 
 ```php
-use Sause\Traits\Call;
+use Sauce\Traits\Call;
 
 class MyClass {
     use Call;
