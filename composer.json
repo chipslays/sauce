@@ -1,0 +1,18 @@
+{
+    "name": "chipslays/sauce",
+    "description": "Collection of Simple Traits.",
+    "keywords": [
+        "collection",
+        "traits"
+    ],
+    "type": "library",
+    "license": "MIT",
+    "autoload": {
+        "psr-4": {
+            "Sauce\\": "src/"
+        }
+    },
+    "require-dev": {
+        "phpunit/phpunit": "^9.5"
+    }
+}
