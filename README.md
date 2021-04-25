@@ -68,6 +68,8 @@ echo SingletonClass::getInstance()->set(3)->get(); // return 3
 
 When applied to a class, makes it possible to add methods to that class at runtime.
 
+> ℹ `Mappable` already include `Call` trait.
+
 ```php
 use Sauce\Traits\MappableClass;
 
