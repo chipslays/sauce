@@ -1,5 +1,9 @@
 # 🍅 Sauce
 
+[![Tests](https://github.com/chipslays/sauce/actions/workflows/tests.yml/badge.svg)](https://github.com/chipslays/sauce/actions/workflows/tests.yml)
+![Packagist Version](https://img.shields.io/packagist/v/chipslays/sauce)
+![GitHub](https://img.shields.io/github/license/chipslays/sauce)
+
 A sauce made from useful things.
 
 # Installation
