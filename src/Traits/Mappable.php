@@ -33,12 +33,20 @@ trait Mappable
 
     public function __call($method, $args)
     {
+        if (!isset(self::$__mappedMethods[$method])) {
+            throw new MappableException("Method `$method` not exists in " . __CLASS__);
+        }
+
         $fn = self::$__mappedMethods[$method];
         return is_callable($fn) || class_exists($fn) ? $this->__call_function($fn, $args) : $fn;
     }
 
     public static function __callStatic($method, $args)
     {
+        if (!isset(self::$__mappedMethods[$method])) {
+            throw new MappableException("Method `$method` not exists in " . __CLASS__);
+        }
+
         $fn = self::$__mappedMethods[$method];
         return is_callable($fn) || class_exists($fn) ? self::__call_function($fn, $args) : $fn;
     }
